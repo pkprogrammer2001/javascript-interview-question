@@ -39,3 +39,23 @@ function joinArray(inp){
   console.log(inp.join(" "))
 }
 joinArray(["bro","how","are","you","?"])
+
+//different ways to create an object
+
+let obj1 = { // 1stobject literal
+  name:"asad",
+  uni:"virtual university"
+}
+let obj2= Object.create(null); // 2nd make object by using object creat emethod
+
+function obj3(){ //3rd make object using contructor function
+  this.name= "asad"
+}
+let newobj3= new obj3();
+
+class obj4 { //4th make object using class 
+  constructor(){};
+  a=12;
+}
+let newobj4= new obj4;
+
