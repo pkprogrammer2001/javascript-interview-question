@@ -59,3 +59,18 @@ class obj4 { //4th make object using class
 }
 let newobj4= new obj4;
 
+// what is higher order function?
+// jo function jis ma return ho function yn as a argument pass ho function usko higher order funtion kehta hain.
+function highfnc(){
+  return function(){
+    console.log ("bro")
+  }
+}
+let returnfunc = highfnc()
+returnfunc();
+function highfnc1(val){
+  val()
+}
+highfnc1(()=>{
+  console.log("higher order function")
+})
