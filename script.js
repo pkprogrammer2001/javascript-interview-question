@@ -20,3 +20,22 @@ console.log(checkArray1({name:"asad"}));// yeh object hai isliya false return
 console.log(checkArray1("sheryians"));//yeh string hai isliya false return
 console.log(checkArray1([1,3,4,5,"harsh","Asad"])); 
 
+function checkArray2(n,ind=1){
+  var cloned =[];
+  for(var i=0; i<ind; i++){
+    cloned.push(n[i]);
+  }
+  return cloned;
+}
+console.log(checkArray2([1,3,4,4,5],3));
+console.log(checkArray2([20393,450,3,4,4,5],4));
+console.log(checkArray2([8,3,4,4,5]));
+console.log(checkArray2(["bro",3,4,4,5],2));
+console.log(checkArray2(["fun",3,4,4,5]));
+
+//question join array 
+
+function joinArray(inp){
+  console.log(inp.join(" "))
+}
+joinArray(["bro","how","are","you","?"])
