@@ -68,9 +68,39 @@ function highfnc(){
 }
 let returnfunc = highfnc()
 returnfunc();
+
 function highfnc1(val){
   val()
 }
 highfnc1(()=>{
   console.log("higher order function")
 })
+
+let thisobj= {
+  bro:"hello",
+  name:"someone"
+}
+
+function thisfunc (){
+  console.log(this);
+}
+let newbind= thisfunc.bind(thisobj)
+newbind()
+
+//sum of all array element
+let sum = [1,4,5,6,6,7]
+var newsum =0
+sum.forEach(val => {
+  newsum= newsum+val;
+});
+// sum of array element with avioding string.
+let sum1 = [1,4,5,6,"100","20",6,7,20]
+var newsum1 =0
+sum1.forEach(val => {
+  if (typeof val === "number"){
+    newsum1= newsum1+val;
+  }
+});
+
+
+
