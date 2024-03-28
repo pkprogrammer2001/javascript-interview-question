@@ -161,5 +161,9 @@ console.log(newCheckElement1)
 
 
 //what is slice? slice jo array k kisi part ko nikl kr deta hai
+//slice is immutable 
 let spliceArray = [1,2,4,5,67,7,8,9];
 console.log(spliceArray.slice(1,5));
+
+//mutable and immutable
+// aisa koi bhi operation jis sy array ki value change hojai ussy mutable and jissy array ki value same raha ussy kehta hai immutable
