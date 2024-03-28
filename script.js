@@ -158,3 +158,8 @@ let newCheckElement1 = checkElement1.filter(function (val) {
   if (val.split("a").length<=2) return true;
 })
 console.log(newCheckElement1)
+
+
+//what is slice? slice jo array k kisi part ko nikl kr deta hai
+let spliceArray = [1,2,4,5,67,7,8,9];
+console.log(spliceArray.slice(1,5));
