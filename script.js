@@ -139,4 +139,10 @@ let returnfilterArray = filterArray.filter(function(val){
 })
 console.log(returnfilterArray);
 
+let stringfilter =["ab","300",30,34,5,6 ,"string","asad",40];
+
+let returnStringFilter = stringfilter.filter(function(val){
+  if(typeof val =="string") return true;
+})
+
 
