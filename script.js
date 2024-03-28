@@ -187,3 +187,7 @@ let freezeObj ={
   age :22
 }
 Object.freeze(freezeObj); //ab is object ko change nhi kr skta hai
+
+//get all unique element of array
+let uniqueArray = [1,2,3,5,3,5,6,6,3,2,21,1,57,8,7]
+let getSetValue = [...new Set(uniqueArray)];
