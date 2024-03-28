@@ -102,5 +102,38 @@ sum1.forEach(val => {
   }
 });
 
+for(var v=0;v<10;v++){
+  console.log(v)
+}
+
+//what is map
+//map k bi structure forEach ki trhan hota hai mgr is ma value return ki jati hai or new variable ma save kr skta hain
+let mapArray = ["asad1","bro","g-wagon", "rolls","mercedes","chainSmoker"]
+let returnMapArray = mapArray.map(function(val) {
+  if(val.length===5){
+    return `<p>${val}</p>`
+  }else{
+    return `<span>${val}</span>`
+  }
+})
+
+let arrayOfObject =[
+  {name:"asad", age:22},
+  {name:"bro", age:23},
+  {name:"chainsmoker", age:13},
+  {name:"the weeknd", age:33}
+]
+let returnObject = arrayOfObject.map(function(val){
+  return {name:val.name,age:val.age}
+})
+
+let filterArray = [1,3,5,6,7,3,5,78,84,2,4];
+
+let returnfilterArray = filterArray.filter(function(val){
+  if(val>4){
+    return val
+  }
+})
+console.log(returnfilterArray);
 
 
