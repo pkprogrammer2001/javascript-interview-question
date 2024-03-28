@@ -173,3 +173,9 @@ console.log(newsplice);
 
 //mutable and immutable
 // aisa koi bhi operation jis sy array ki value change hojai ussy mutable and jissy array ki value same raha ussy kehta hai immutable
+let deleteobj ={
+  name:"asad",
+  age:22,
+  uni:"vu"
+}
+delete deleteobj.age;
