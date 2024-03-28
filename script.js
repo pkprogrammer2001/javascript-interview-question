@@ -160,10 +160,16 @@ let newCheckElement1 = checkElement1.filter(function (val) {
 console.log(newCheckElement1)
 
 
-//what is slice? slice jo array k kisi part ko nikl kr deta hai
+//what is slice? slice jo array k kisi part ko nikl kr uski copy bana kr deta hai 
 //slice is immutable 
-let spliceArray = [1,2,4,5,67,7,8,9];
-console.log(spliceArray.slice(1,5));
+let sliceArray = [1,2,4,5,67,7,8,9];
+console.log(sliceArray.slice(1,5));
+
+//what is splice? jo real array ma sy kuch hisa hata krdeta hai 
+//splice is mutable q k yeh real array ko change krdeta hai 
+let spliceArray = [1,3,3,45,67,8,8,8754,4];
+let newsplice = spliceArray.splice(3,3);
+console.log(newsplice);
 
 //mutable and immutable
 // aisa koi bhi operation jis sy array ki value change hojai ussy mutable and jissy array ki value same raha ussy kehta hai immutable
