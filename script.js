@@ -179,3 +179,11 @@ let deleteobj ={
   uni:"vu"
 }
 delete deleteobj.age;
+
+//freeze the object so we can't update add and delete the value of object
+
+let freezeObj ={
+  name:"asad",
+  age :22
+}
+Object.freeze(freezeObj); //ab is object ko change nhi kr skta hai
