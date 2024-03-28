@@ -127,6 +127,9 @@ let returnObject = arrayOfObject.map(function(val){
   return {name:val.name,age:val.age}
 })
 
+//what is filter
+//filter bi exact structure map ki trhan hota hai bss is ma return hoga woh boolean hoga yn form of boolean ....(true yn false) yn issi koi statement jo true false ma convert hojai...
+
 let filterArray = [1,3,5,6,7,3,5,78,84,2,4];
 
 let returnfilterArray = filterArray.filter(function(val){
