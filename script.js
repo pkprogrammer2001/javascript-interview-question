@@ -153,8 +153,8 @@ let newCheckElement = checkElement.filter(function (val) {
 console.log(newCheckElement)
 
 // remove that string which have double "a" or more than 2 a in array element;
-let checkElement1 =["asad1","bro","g-wagon", "rolls royce","mercedes","chainSmoker"]
+let checkElement1 =["asad1","bro","g-wagon", "rolls royce","mercedes","abdullah","fatima","chainSmoker"]
 let newCheckElement1 = checkElement1.filter(function (val) {
-  if (val.split("a").length==2) return true;
+  if (val.split("a").length<=2) return true;
 })
 console.log(newCheckElement1)
