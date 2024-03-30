@@ -214,3 +214,11 @@ for (let key in dupObject) {
     console.log(key);
   }
 }
+
+var splitnum = 30494652858;
+var splitnumStr= splitnum.toString();
+for (let i = 1; i<splitnumStr.length; i++){
+  if(Number(splitnumStr[i-1])%2===0 && Number(splitnumStr[i])%2=== 0){
+    splitnumStr = splitnumStr.substring(0,i)+ '-' +splitnumStr.substring(i, splitnumStr.length)
+  }
+}
