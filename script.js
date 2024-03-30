@@ -191,3 +191,26 @@ Object.freeze(freezeObj); //ab is object ko change nhi kr skta hai
 //get all unique element of array
 let uniqueArray = [1,2,3,5,3,5,6,6,3,2,21,1,57,8,7]
 let getSetValue = [...new Set(uniqueArray)];
+
+// check the frequency of array elements
+let freqArray =["a","a",34,5,"b","b","c",6,6,7];
+let freqObject ={};
+freqArray.forEach(function(elem){
+  freqObject.hasOwnProperty(elem)?freqObject[elem]++: freqObject[elem]=1;
+})
+console.log(freqObject);
+
+//find duplicate value in javascript
+
+let dupArray =["a","a",34,34,3,4,34,5,"b","a","b","c",6,6,7];
+let dupObject ={};
+dupArray.forEach(function(elem){
+  dupObject.hasOwnProperty(elem) ? dupObject[elem]++ : dupObject[elem]=1;
+})
+console.log(dupObject);
+
+for (let key in dupObject) {
+  if(dupObject[key]>1){
+    console.log(key);
+  }
+}
