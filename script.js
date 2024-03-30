@@ -222,3 +222,16 @@ for (let i = 1; i<splitnumStr.length; i++){
     splitnumStr = splitnumStr.substring(0,i)+ '-' +splitnumStr.substring(i, splitnumStr.length)
   }
 }
+
+function caseConvert(str){
+  var newStr = str.split("").map(function(e){
+    if(e.charCodeAt() >90){
+      return e.toUpperCase()
+    }
+    else{
+      return e.toLowerCase()
+    }
+  })
+  return newStr.join("");
+}
+let returnCase = caseConvert("I'm FUll-staCk deVeLoPer");
